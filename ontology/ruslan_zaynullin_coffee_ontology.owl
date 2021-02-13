@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.coffee.com/ontologies/coffee.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.coffee.com/ontologies/coffee.owl">
+    <Prefix name="" IRI="http://www.pizza.com/ontologies/pizza.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A coffee ontology that describes various types of coffe with additions
+</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AlcoholIceAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanoCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapuccinoCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaramelAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChiliPepperAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CinnamonAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CofeeFlavoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoffeeSeeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CowMilkAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EspressoCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlavourableCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruitIceAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruitsAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoatMilkAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenPepperAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IceAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatteCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LemonAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MangoAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilkAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoSugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoSugarCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrangeAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RawIceAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedPepperAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeasoningAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrongCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SugarValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TastyCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TenderCoffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySweet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZestAddition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeeds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSweetness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSeedsOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#England"/>
+            <NamedIndividual IRI="#America"/>
+            <NamedIndividual IRI="#France"/>
+            <NamedIndividual IRI="#Germany"/>
+            <NamedIndividual IRI="#Italy"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FlavourableCoffee"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Coffee"/>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#hasAddition"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NoSugarCoffee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAddition"/>
+            <Class IRI="#NoSugar"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StrongCoffee"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Coffee"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasCalorificContentValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="&xsd;maxExclusive">
+                        <Literal datatypeIRI="&xsd;integer">10</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SugarValuePartition"/>
+        <ObjectUnionOf>
+            <Class IRI="#Medium"/>
+            <Class IRI="#NoSugar"/>
+            <Class IRI="#VerySweet"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SweetCoffee"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Coffee"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAddition"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#CofeeFlavoring"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasSweetness"/>
+                        <Class IRI="#VerySweet"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TastyCoffee"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Coffee"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAddition"/>
+                <Class IRI="#SeasoningAddition"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TenderCoffee"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Coffee"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasCalorificContentValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&xsd;integer">60</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TenderCoffee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAddition"/>
+            <Class IRI="#MilkAddition"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AlcoholIceAddition"/>
+        <Class IRI="#IceAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanoCoffee"/>
+        <Class IRI="#NamedCoffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapuccinoCoffee"/>
+        <Class IRI="#NamedCoffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapuccinoCoffee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAddition"/>
+            <Class IRI="#MilkAddition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaramelAddition"/>
+        <Class IRI="#SeasoningAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChiliPepperAddition"/>
+        <Class IRI="#PepperAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChiliPepperAddition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#VerySweet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinnamonAddition"/>
+        <Class IRI="#SeasoningAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinnamonAddition"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#Italy"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSeeds"/>
+            <Class IRI="#CoffeeSeeds"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCalorificContentValue"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CowMilkAddition"/>
+        <Class IRI="#MilkAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EspressoCoffee"/>
+        <Class IRI="#NamedCoffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruitIceAddition"/>
+        <Class IRI="#IceAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruitsAddition"/>
+        <Class IRI="#CofeeFlavoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoatMilkAddition"/>
+        <Class IRI="#MilkAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grains"/>
+        <Class IRI="#CoffeeSeeds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenPepperAddition"/>
+        <Class IRI="#PepperAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenPepperAddition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#NoSugar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IceAddition"/>
+        <Class IRI="#CofeeFlavoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instant"/>
+        <Class IRI="#CoffeeSeeds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatteCoffee"/>
+        <Class IRI="#NamedCoffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatteCoffee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAddition"/>
+            <Class IRI="#MilkAddition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LemonAddition"/>
+        <Class IRI="#FruitsAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MangoAddition"/>
+        <Class IRI="#FruitsAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#SugarValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilkAddition"/>
+        <Class IRI="#CofeeFlavoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedCoffee"/>
+        <Class IRI="#Coffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoSugar"/>
+        <Class IRI="#SugarValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoSugarCoffee"/>
+        <Class IRI="#Coffee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrangeAddition"/>
+        <Class IRI="#FruitsAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperAddition"/>
+        <Class IRI="#FruitsAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RawIceAddition"/>
+        <Class IRI="#IceAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedPepperAddition"/>
+        <Class IRI="#PepperAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedPepperAddition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeasoningAddition"/>
+        <Class IRI="#CofeeFlavoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SugarValuePartition"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySweet"/>
+        <Class IRI="#SugarValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZestAddition"/>
+        <Class IRI="#FruitsAddition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZestAddition"/>
+        <Class IRI="#SeasoningAddition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AlcoholIceAddition"/>
+        <Class IRI="#FruitIceAddition"/>
+        <Class IRI="#RawIceAddition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CaramelAddition"/>
+        <Class IRI="#CinnamonAddition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChiliPepperAddition"/>
+        <Class IRI="#GreenPepperAddition"/>
+        <Class IRI="#RedPepperAddition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CofeeFlavoring"/>
+        <Class IRI="#Coffee"/>
+        <Class IRI="#CoffeeSeeds"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FruitsAddition"/>
+        <Class IRI="#IceAddition"/>
+        <Class IRI="#MilkAddition"/>
+        <Class IRI="#SeasoningAddition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Grains"/>
+        <Class IRI="#Instant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Medium"/>
+        <Class IRI="#NoSugar"/>
+        <Class IRI="#VerySweet"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AmericanoCoffee"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EspressoCoffee"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAddition"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSeeds"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAdditionOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSeedsOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAddition"/>
+        <ObjectProperty IRI="#isAdditionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isIngredientOf"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSeedsOf"/>
+        <ObjectProperty IRI="#hasSeeds"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSeeds"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSweetness"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAddition"/>
+        <Class IRI="#Coffee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeeds"/>
+        <Class IRI="#Coffee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSeedsOf"/>
+        <Class IRI="#CoffeeSeeds"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddition"/>
+        <Class IRI="#CofeeFlavoring"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeeds"/>
+        <Class IRI="#CoffeeSeeds"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSweetness"/>
+        <Class IRI="#SugarValuePartition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSeedsOf"/>
+        <Class IRI="#Coffee"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AmericanoCoffee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella andTomato toppings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EspressoCoffee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella andTomato toppings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LatteCoffee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella andTomato toppings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ZestAddition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class should be inconsistent when the ontology is classified</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

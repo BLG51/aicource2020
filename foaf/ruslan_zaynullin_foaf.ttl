@@ -1,0 +1,19 @@
+@prefix : <http://kpfu.ru/itis/aicourse2020/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+
+:impendingdoom 	rdf:type foaf:Person;
+		foaf:name "Zaynullin Ruslan"@en,
+			  "Зайнуллин Руслан"@ru;
+		schema:birthDate "1998-09-07"^^xsd:date;
+		foaf:mbox <mailto:zary1998@gmail.com>;
+		foaf:knows :obscurecore,
+			   [
+			     rdf:type foaf:Person;
+			     foaf:name "Potapov Ruslan"@en,
+				       "Потапов Руслан"@ru
+			   ];
+                foaf:interest <http://dbpedia.org/resource/Pumped_Up_Kicks>,
+			      <http://dbpedia.org/resource/Ain%27t_No_Rest_for_the_Wicked>.

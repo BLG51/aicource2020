@@ -1,0 +1,12 @@
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/name> "Zaynullin Ruslan"@en .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/name> "\u0417\u0430\u0439\u043d\u0443\u043b\u043b\u0438\u043d\u0020\u0420\u0443\u0441\u043b\u0430\u043d"@ru .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://schema.org/birthDate> "1998-09-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/mbox> <mailto:zary1998@gmail.com> .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/knows> <http://kpfu.ru/itis/aicourse2020/obscurecore> .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/knows> _:genid1 .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/interest> <https://dbpedia.org/page/Pumped_Up_Kicks> .
+<http://kpfu.ru/itis/aicourse2020/blg51> <http://xmlns.com/foaf/0.1/interest> <https://dbpedia.org/page/Ain%27t_No_Rest_for_the_Wicked> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Potapov Ruslan"@en .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "\u041f\u043e\u0442\u0430\u043f\u043e\u0432\u0020\u0420\u0443\u0441\u043b\u0430\u043d"@ru .

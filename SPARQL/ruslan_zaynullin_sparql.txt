@@ -1,0 +1,11 @@
+SELECT ?name, (count (?person) AS ?popularity)
+WHERE {
+    ?friend rdf:type foaf:Person.
+    OPTIONAL {
+        ?person foaf:knows ?friend.
+    }
+    ?friend foaf:name ?name.
+    FILTER (lang(?name) = "ru")
+}
+GROUP BY ?name
+ORDER BY DESC(?popularity)
